@@ -56,6 +56,34 @@ public class evaluasiSoal10set {
         System.out.println("Nilai Jumlah Kolom 24 = " + getKolom(24));
         System.out.println("Nilai Jumlah Kolom 25 = " + getKolom(25));
         System.out.println("Nilai Jumlah Kolom 26 = " + getKolom(26));
+        System.out.println();
+
+        System.out.println("Pola Direction 1 = " + getDirection(1));
+        System.out.println("Pola Direction 2 = " + getDirection(2));
+        System.out.println("Pola Direction 3 = " + getDirection(3));
+        System.out.println("Pola Direction 4 = " + getDirection(4));
+        System.out.println("Pola Direction 5 = " + getDirection(5));
+        System.out.println("Pola Direction 6 = " + getDirection(6));
+        System.out.println("Pola Direction 7 = " + getDirection(7));
+        System.out.println("Pola Direction 8 = " + getDirection(8));
+        System.out.println("Pola Direction 9 = " + getDirection(9));
+        System.out.println("Pola Direction 10 = " + getDirection(10));
+        System.out.println("Pola Direction 11 = " + getDirection(11));
+        System.out.println("Pola Direction 12 = " + getDirection(12));
+        System.out.println("Pola Direction 13 = " + getDirection(13));
+        System.out.println("Pola Direction 14 = " + getDirection(14));
+        System.out.println("Pola Direction 15 = " + getDirection(15));
+        System.out.println("Pola Direction 16 = " + getDirection(16));
+        System.out.println("Pola Direction 17 = " + getDirection(17));
+        System.out.println("Pola Direction 18 = " + getDirection(18));
+        System.out.println("Pola Direction 19 = " + getDirection(19));
+        System.out.println("Pola Direction 20 = " + getDirection(20));
+        System.out.println("Pola Direction 21 = " + getDirection(21));
+        System.out.println("Pola Direction 22 = " + getDirection(22));
+        System.out.println("Pola Direction 23 = " + getDirection(23));
+        System.out.println("Pola Direction 24 = " + getDirection(24));
+        System.out.println("Pola Direction 25 = " + getDirection(25));
+        System.out.println("Pola Direction 26 = " + getDirection(26));
             
     }
 
@@ -92,6 +120,30 @@ public class evaluasiSoal10set {
             nilai++;
         }        
         return nilai-1;
+
+    }
+
+    public static int getDirection(int lengthData) {
+        
+        int i, j, k;
+        i = 1;
+        k = 1;
+        int counter = 0;
+    
+        while (counter != lengthData)
+        {
+            for (j = 1; j <= i; j+=2)
+            {
+                k = i % 4;                
+                counter++;
+                if (counter == lengthData) {
+                    break;
+                }                                                     
+            }
+            i++;
+            
+        }
+        return k;
 
     }
     
